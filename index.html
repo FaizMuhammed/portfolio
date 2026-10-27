@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Faiz Muhammed - Software Developer Portfolio. Expertise in Python, Java, Django, React, MySQL, HTML, CSS, and JavaScript." />
+  <meta name="keywords" content="Faiz Muhammed, Software Developer, Python, Django, React, Web Developer Portfolio" />
+  <meta name="author" content="Faiz Muhammed" />
+  
+  <title>Faiz Muhammed | Software Developer Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%236366f1'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='monospace' font-weight='bold' font-size='38'>&lt;FM/&gt;</text></svg>" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-theme="dark">
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="brand-text"><span class="logo-code">&lt;</span>FM<span class="logo-code"> /&gt;</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Resume CTA -->
+        <a href="https://drive.google.com/file/d/1pTwzk9NkhPB-pqT3VR9DLFHG9M3hNcLY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline nav-resume-btn">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+
+        <!-- Hamburger Icon for Mobile -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Mobile Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="pulse-dot"></span> Available for Developer Roles
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Faiz Muhammed</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span class="typing-prefix">I am a </span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Passionate software developer focused on building responsive, user-friendly, and high-performance web applications with Python, Django, React, and modern web technologies.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-paper-plane"></i> Contact Me
+            </a>
+            <a href="https://drive.google.com/file/d/1pTwzk9NkhPB-pqT3VR9DLFHG9M3hNcLY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> View Resume
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/FaizMuhammed" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/faiz-muhammed-ag" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:agfaiz313@gmail.com" class="social-icon" aria-label="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-code-wrapper">
+            <div class="hero-code-glow"></div>
+            <div class="code-window-card hero-code-card">
+              <div class="code-window-header">
+                <div class="window-controls">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="code-window-tabs">
+                  <button type="button" class="code-tab active" data-tab="python" aria-label="Python snippet">
+                    <i class="fa-brands fa-python"></i> <span>faiz.py</span>
+                  </button>
+                  <button type="button" class="code-tab" data-tab="json" aria-label="Skills JSON">
+                    <i class="fa-solid fa-code"></i> <span>skills.json</span>
+                  </button>
+                </div>
+                <button type="button" class="copy-code-btn" id="copyHeroCode" title="Copy code" aria-label="Copy code">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Python Tab Panel -->
+              <div class="code-panel active" id="panelPython">
+                <div class="code-line-numbers" aria-hidden="true">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                  <span>11</span>
+                  <span>12</span>
+                </div>
+                <pre class="code-body"><code><span class="kw">class</span> <span class="cls">FaizMuhammed</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.name = <span class="str">"Faiz Muhammed"</span>
+        self.role = <span class="str">"Software Developer"</span>
+        self.degree = <span class="str">"BCA Graduate (2025)"</span>
+        self.stack = [
+            <span class="str">"Python"</span>, <span class="str">"Django"</span>,
+            <span class="str">"React"</span>, <span class="str">"MySQL"</span>
+        ]
+        self.open_to_work = <span class="bl">True</span>
+
+    <span class="kw">def</span> <span class="fn">contact</span>(self):
+        <span class="kw">return</span> <span class="str">"agfaiz313@gmail.com"</span></code></pre>
+              </div>
+
+              <!-- JSON Tab Panel -->
+              <div class="code-panel" id="panelJson">
+                <div class="code-line-numbers" aria-hidden="true">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                  <span>11</span>
+                </div>
+                <pre class="code-body"><code>{
+  <span class="kw">"developer"</span>: <span class="str">"Faiz Muhammed"</span>,
+  <span class="kw">"title"</span>: <span class="str">"Software Developer"</span>,
+  <span class="kw">"location"</span>: <span class="str">"Kerala, India"</span>,
+  <span class="kw">"technologies"</span>: [
+    <span class="str">"Python"</span>, <span class="str">"Django"</span>,
+    <span class="str">"React.js"</span>, <span class="str">"Java"</span>,
+    <span class="str">"MySQL"</span>, <span class="str">"JavaScript"</span>
+  ],
+  <span class="kw">"status"</span>: <span class="str">"Open for Opportunities"</span>
+}</code></pre>
+              </div>
+
+              <div class="code-window-footer">
+                <div class="terminal-status">
+                  <span class="terminal-dot"></span>
+                  <span class="terminal-status-text">Available for Developer Roles</span>
+                </div>
+                <div class="terminal-meta">
+                  <span class="terminal-branch"><i class="fa-solid fa-code-branch"></i> main</span>
+                  <span class="terminal-lang">Python 3.12</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon python-bg"><i class="fa-brands fa-python"></i></div>
+              <div class="badge-text">
+                <span class="badge-sub">Backend</span>
+                <span class="badge-main">Python & Django</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon react-bg"><i class="fa-brands fa-react"></i></div>
+              <div class="badge-text">
+                <span class="badge-sub">Frontend</span>
+                <span class="badge-main">React.js</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <div class="badge-icon code-bg"><i class="fa-solid fa-layer-group"></i></div>
+              <div class="badge-text">
+                <span class="badge-sub">Full-Stack</span>
+                <span class="badge-main">Web Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Passionate Developer & Problem Solver</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-content">
+            <h3 class="about-heading">Transforming ideas into clean, functional code</h3>
+            <p class="about-p">
+              I am a dedicated software developer with a strong foundation in both backend and frontend development. Having completed my Bachelor of Computer Applications (BCA) and gained real-world experience during my software development internship at <strong>KodNest Technologies</strong>, I enjoy taking concepts from wireframes to full production.
+            </p>
+            <p class="about-p">
+              My technical expertise revolves around <strong>Python</strong>, <strong>Django</strong>, <strong>Java</strong>, <strong>MySQL</strong>, <strong>HTML/CSS</strong>, <strong>JavaScript</strong>, and <strong>React</strong>. I place strong emphasis on responsive UI design, scalable database modeling, and writing clean, maintainable code.
+            </p>
+
+            <div class="personal-info-grid">
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <span class="info-value"><a href="mailto:agfaiz313@gmail.com">agfaiz313@gmail.com</a></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                <span class="info-value">BCA (Kannur University)</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                <span class="info-value">Kerala, India</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label"><i class="fa-solid fa-circle-check"></i> Status:</span>
+                <span class="info-value highlight-status">Open to Opportunities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right-content">
+            <div class="about-stats-cards">
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="stat-number">5+</div>
+                <div class="stat-title">Real-World Projects</div>
+                <div class="stat-desc">Full-Stack & Frontend builds</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="stat-number">1</div>
+                <div class="stat-title">Industry Internship</div>
+                <div class="stat-desc">KodNest Technologies</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-code-branch"></i></div>
+                <div class="stat-number">8+</div>
+                <div class="stat-title">Core Technologies</div>
+                <div class="stat-desc">Python, Django, React, Java & SQL</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                <div class="stat-number">2025</div>
+                <div class="stat-title">BCA Graduate</div>
+                <div class="stat-desc">Wiras Vilayancode, Kannur</div>
+              </div>
+            </div>
+
+            <!-- Developer Engineering Focus Card -->
+            <div class="about-highlight-card">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <div class="highlight-text">
+                <span class="highlight-title">Philosophy: Clean Code & Real Impact</span>
+                <p class="highlight-desc">
+                  Focused on building robust backend systems with Python & Django, crafting responsive interfaces with React, and delivering reliable software solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Capabilities</span>
+          <h2 class="section-title">Technical Skills & Expertise</h2>
+          <div class="section-line"></div>
+          <p class="section-subtext">A breakdown of my technical competencies across programming, frameworks, databases, and developer tooling.</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-pill">
+                <i class="fa-brands fa-python skill-icon python-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-badge">Core & OOP</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-brands fa-java skill-icon java-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-badge">OOP & Fundamentals</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-brands fa-js skill-icon js-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-badge">DOM & Async</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-database skill-icon sql-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-badge">Queries & DDL/DML</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web & Frameworks -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h3 class="category-title">Frameworks & Web Technologies</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-pill">
+                <i class="fa-brands fa-react skill-icon react-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">React.js</span>
+                  <span class="skill-badge">Components, State & Hooks</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-cube skill-icon redux-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">Redux</span>
+                  <span class="skill-badge">State Management</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-server skill-icon django-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">Django</span>
+                  <span class="skill-badge">MVC, Auth & ORM</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-brands fa-html5 skill-icon html-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">HTML5 & Semantic Web</span>
+                  <span class="skill-badge">Layout & Accessibility</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">CSS3 & Responsive Design</span>
+                  <span class="skill-badge">Flexbox, Grid & Animation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
+              <h3 class="category-title">Databases & Storage</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-pill">
+                <i class="fa-solid fa-database skill-icon mysql-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-badge">Relational Schema & Joins</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-table skill-icon sqlite-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">SQLite</span>
+                  <span class="skill-badge">Embedded DB</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-hard-drive skill-icon storage-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">Browser LocalStorage</span>
+                  <span class="skill-badge">Client Persistence</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3 class="category-title">Tools & Development Workflow</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-pill">
+                <i class="fa-brands fa-git-alt skill-icon git-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-badge">Version Control</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-brands fa-github skill-icon github-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-badge">Repositories & Pages</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-terminal skill-icon vscode-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-badge">IDE & Extensions</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-bolt skill-icon vite-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">Vite</span>
+                  <span class="skill-badge">Frontend Tooling</span>
+                </div>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-cubes skill-icon workbench-color"></i>
+                <div class="skill-details">
+                  <span class="skill-name">MySQL Workbench</span>
+                  <span class="skill-badge">DB Administration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+          <p class="section-subtext">A selection of my web applications showcasing full-stack development, modern frontend engineering, and interactive DOM logic.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack / Django</button>
+          <button class="filter-btn" data-filter="react">React.js</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript & UI</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1: MealMate -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-header">
+              <div class="project-category-badge fullstack-badge">Full-Stack Application</div>
+              <span class="project-number">01</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">MealMate – Food Ordering Platform</h3>
+              <p class="project-description">
+                A full-stack online food delivery platform built with Django connecting customers with restaurants. Features separate workflows for customers and administrators with role-based access control.
+              </p>
+              <div class="project-feature-list">
+                <div class="feature-item"><i class="fa-solid fa-check"></i> User authentication & role-based permissions</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Restaurant browsing & menu management</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Interactive shopping cart & checkout flow</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Admin order processing & live menu updates</div>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://mealmate-6a8w.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/FaizMuhammed" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: TaskBuddy -->
+          <article class="project-card" data-category="react">
+            <div class="project-card-header">
+              <div class="project-category-badge react-badge">React & Vite</div>
+              <span class="project-number">02</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">TaskBuddy – Productivity App</h3>
+              <p class="project-description">
+                A modern productivity and task management web app built with React.js and Vite. Enables users to organize their daily schedule with priority categorization and visual completion progress.
+              </p>
+              <div class="project-feature-list">
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Priority grouping (Low, Medium, High)</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Categories: General, Work, and Personal</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Dynamic progress bar tracking completion rate</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Persistent LocalStorage data across sessions</div>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://faizmuhammed.github.io/TaskBuddy/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/FaizMuhammed/TaskBuddy" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Rock Paper Scissors -->
+          <article class="project-card" data-category="javascript">
+            <div class="project-card-header">
+              <div class="project-category-badge js-badge">Interactive Game</div>
+              <span class="project-number">03</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Rock Paper Scissors Game</h3>
+              <p class="project-description">
+                An engaging browser-based game where players compete against the computer in real time. Built using core JavaScript logic, dynamic DOM updates, and local storage persistence.
+              </p>
+              <div class="project-feature-list">
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Real-time gameplay with randomized AI moves</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Instant visual feedback with emoji choices</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Wins, losses, and ties scorekeeping system</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Score reset and local storage preservation</div>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://faizmuhammed.github.io/Rock-Paper-Scissor/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/FaizMuhammed/Rock-Paper-Scissor" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Todo List -->
+          <article class="project-card" data-category="javascript">
+            <div class="project-card-header">
+              <div class="project-category-badge js-badge">Web Utility</div>
+              <span class="project-number">04</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Interactive Todo List Application</h3>
+              <p class="project-description">
+                A clean, efficient task organizer allowing users to schedule and keep track of daily deadlines. Leverages CSS Grid for responsive alignment and JavaScript arrays for state handling.
+              </p>
+              <div class="project-feature-list">
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Date picker and task name assignment</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Dynamic DOM rendering and list reconciliation</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> One-click task deletion with reactive updates</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> CSS Grid layout for structured alignment</div>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">DOM Manipulation</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://faizmuhammed.github.io/ToDoList/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/FaizMuhammed/ToDoList" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: YouTube Homepage Clone -->
+          <article class="project-card" data-category="javascript">
+            <div class="project-card-header">
+              <div class="project-category-badge ui-badge">Frontend Clone</div>
+              <span class="project-number">05</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">YouTube Homepage Clone</h3>
+              <p class="project-description">
+                A pixel-accurate frontend clone of YouTube's desktop interface. Faithfully recreates the fixed header, multi-action sidebar, responsive video grid, and hover tooltips.
+              </p>
+              <div class="project-feature-list">
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Fixed header with search bar & voice search icon</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Collapsible sidebar navigation with hover states</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Multi-column responsive CSS Grid video catalog</div>
+                <div class="feature-item"><i class="fa-solid fa-check"></i> Video metadata: thumbnails, titles & durations</div>
+              </div>
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Flexbox</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://faizmuhammed.github.io/Youtube/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/FaizMuhammed/Youtube" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-badge">Internship</div>
+              <div class="timeline-header-info">
+                <div>
+                  <h3 class="timeline-role">Software Developer Intern</h3>
+                  <h4 class="timeline-company"><i class="fa-solid fa-building"></i> KodNest Technologies</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Software Development Track</span>
+              </div>
+              <p class="timeline-summary">
+                During my internship at KodNest Technologies, I gained hands-on experience in end-to-end software development by working with core technologies including Python, Java, MySQL, HTML, CSS, and JavaScript. Strengthened core programming logic and learned industry-standard workflows.
+              </p>
+              <h5 class="contributions-title">Key Learnings & Contributions:</h5>
+              <ul class="contributions-list">
+                <li><i class="fa-solid fa-chevron-right"></i> Strengthened object-oriented programming fundamentals and problem-solving skills in <strong>Python</strong> and <strong>Java</strong>.</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Practiced relational database design, query optimization, and data management with <strong>MySQL</strong>.</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Built modular, responsive web user interfaces using semantic <strong>HTML</strong>, modern <strong>CSS</strong>, and vanilla <strong>JavaScript</strong>.</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Developed a full-stack project integrating frontend UI, backend controller logic, and database connectivity.</li>
+                <li><i class="fa-solid fa-chevron-right"></i> Gained exposure to debugging real-world software, agile practices, and code reviews from seasoned industry professionals.</li>
+              </ul>
+              <div class="timeline-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree 1 -->
+          <div class="education-card">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-date">06/2022 – 03/2025</div>
+            <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+            <h4 class="edu-institution">Wadihuda Institute of Research and Advanced Studies, Vilayancode</h4>
+            <div class="edu-details">
+              <span><i class="fa-solid fa-landmark"></i> Kannur University, Kerala</span>
+              <span class="score-pill"><i class="fa-solid fa-chart-line"></i> Score: <strong>58.85%</strong></span>
+            </div>
+            <p class="edu-desc">
+              Core coursework in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems (DBMS), Web Technologies, Software Engineering, and Operating Systems.
+            </p>
+          </div>
+
+          <!-- Degree 2 -->
+          <div class="education-card">
+            <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="edu-date">06/2020 – 03/2022</div>
+            <h3 class="edu-degree">Higher Secondary – Computer Science</h3>
+            <h4 class="edu-institution">P.M.S.A.P.T.S.V.H.S.S Kaikottukadavu</h4>
+            <div class="edu-details">
+              <span><i class="fa-solid fa-location-dot"></i> Kasaragode, Kerala</span>
+              <span class="score-pill score-high"><i class="fa-solid fa-chart-line"></i> Score: <strong>71.5%</strong></span>
+            </div>
+            <p class="edu-desc">
+              Focused on Computer Science, Mathematics, Physics, and foundational programming concepts. Developed analytical problem-solving abilities and early interest in software creation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect & Work Together</h2>
+          <div class="section-line"></div>
+          <p class="section-subtext">Have an opportunity, project, or question? Feel free to reach out directly or send a message below.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Contact Information</h3>
+            <p class="contact-panel-desc">
+              I am actively seeking software developer opportunities, internships, and entry-level positions. Let's discuss how I can contribute to your team!
+            </p>
+
+            <div class="contact-items">
+              <div class="contact-item-card">
+                <div class="contact-item-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">Email</span>
+                  <a href="mailto:agfaiz313@gmail.com" class="contact-item-link" id="emailText">agfaiz313@gmail.com</a>
+                </div>
+                <button class="copy-btn" id="copyEmailBtn" title="Copy to clipboard">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-item-card">
+                <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/faiz-muhammed-ag" target="_blank" rel="noopener noreferrer" class="contact-item-link">linkedin.com/in/faiz-muhammed-ag</a>
+                </div>
+                <a href="https://linkedin.com/in/faiz-muhammed-ag" target="_blank" rel="noopener noreferrer" class="external-link-btn" title="Open LinkedIn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <div class="contact-item-card">
+                <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">GitHub</span>
+                  <a href="https://github.com/FaizMuhammed" target="_blank" rel="noopener noreferrer" class="contact-item-link">github.com/FaizMuhammed</a>
+                </div>
+                <a href="https://github.com/FaizMuhammed" target="_blank" rel="noopener noreferrer" class="external-link-btn" title="Open GitHub">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <div class="contact-item-card">
+                <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-item-content">
+                  <span class="contact-item-label">Location</span>
+                  <span class="contact-item-link">Kerala, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resume Download Box -->
+            <div class="resume-download-card">
+              <div>
+                <h4>Looking for my complete resume?</h4>
+                <p>Download the official PDF with full academic and project credentials.</p>
+              </div>
+              <a href="https://drive.google.com/file/d/1pTwzk9NkhPB-pqT3VR9DLFHG9M3hNcLY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-download"></i> View Resume
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel">
+            <h3 class="contact-panel-title">Send a Direct Message</h3>
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required />
+                </div>
+                <span class="error-message" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required />
+                </div>
+                <span class="error-message" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry / Job Opportunity" required />
+                </div>
+                <span class="error-message" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <textarea id="message" name="message" rows="5" class="form-input" placeholder="Hi Faiz, I came across your portfolio and would love to discuss..." required></textarea>
+                </div>
+                <span class="error-message" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                <i class="fa-regular fa-paper-plane"></i> Send Message
+              </button>
+
+              <div class="form-status" id="formStatus"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-code">&lt;</span>FM<span class="logo-code"> /&gt;</span>
+        </a>
+        <p class="footer-tagline">Crafting responsive, user-friendly software solutions.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/FaizMuhammed" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/faiz-muhammed-ag" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:agfaiz313@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="currentYear"></span> Faiz Muhammed. Built with HTML5, CSS3, & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
